@@ -117,6 +117,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const main = document.querySelectorAll('main');
     main.forEach(mainele => mainele.classList.add('hide'));
     AboutusPage.classList.add('show');
+    document.getElementById('weatherStats').classList.remove('show');
     Supportpage.classList.remove('show');
   });
 
@@ -132,7 +133,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const safeName = country.name.common.replace(/[^a-zA-Z\u0600-\u06FF\s-]/g, '');
         countriesByRegion[region].push(safeName);
-        allCountriesList.push(safeName); // نحفظ الاسم هنا كمان
+        allCountriesList.push(safeName); 
       });
 
       const select = document.getElementById('cities');
@@ -156,6 +157,8 @@ document.addEventListener("DOMContentLoaded", function () {
       const main = document.querySelectorAll('main');
       main.forEach(mainele => mainele.classList.add('hide'));
       AboutusPage.classList.remove('show');
+      document.getElementById('weatherStats').classList.remove('show');
       Supportpage.classList.add('show');
+
   });
 });
