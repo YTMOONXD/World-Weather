@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/98bb996b2e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self'; 
+    connect-src 'self' http://127.0.0.1:5000 https://restcountries.com; 
+    font-src 'self' https://kit.fontawesome.com https://ka-f.fontawesome.com; 
+    img-src 'self' data: https:; 
+    script-src 'self' 'unsafe-inline'; 
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;"
+    >
+    <meta http-equiv="Content-Security-Policy" content="font-src 'self' https://kit.fontawesome.com https://ka-f.fontawesome.com;">
+
+
+
+
+    <title>World Weather</title>
+</head>
+
+<body>
+    <nav>
+        <div id="logo">
+            <h3>World weather</h1>  
+            <i class="fa-solid fa-cloud"></i>
+        </div>
+        <i id="bars" class="fa-solid fa-bars"></i>
+        <div id="links">
+            <p id="searchbtn">Search</p>
+            <p id="aboutusbtn">About us</p>
+            <p id="supportbtn">Support</p>
+        </div>
+        
+    </nav>
+    <main class="slide-up third" id="everything">
+        <div id="main">
+            <div id="welcome">
+                <div id="text">
+                    <h1 class="slide-up first">Your <span>world</span>, Your <span>weather</span></h1>
+                    <p class="slide-up second">Real-time forecasts for every location.</p>                
+                    <button id="searchbtn" class="slide-up third">Search</button>
+                </div>
+            </div>
+        </div>
+        <div id="main-about" class="animate">
+            <p> World Weather is a modern weather forecasting platform that provides real-time and accurate weather updates 
+                for cities around the world. Using the powerful <strong>Weather API</strong>, we ensure precise and reliable data 
+                for all your weather needs.</p>
+                <button  class="animate">Learn more</button>
+               
+            </div>
+        
+        <div id="card-title" class="animate">
+            <h1>Random Weathers Around The World</h1>
+        </div>
+        <div id="cards">
+            <div id="card" class="Tokoy animate">
+                <div id="stats">
+                    <i class="fa-solid fa-wind"></i>
+                    <p>22°</p>
+                    <p>feels like:21°</p>
+                    <h2>Windy</h2>
+                </div>
+            </div>
+            <div id="card" class="Dubai animate">
+                <div id="stats">
+                    <i class="fa-solid fa-smog"></i>
+                    <p>34°</p>
+                    <p>feels like:40°</p>
+                    <h2>Light rain</h2>
+                </div>
+            </div>
+            <div id="card" class="London animate">
+                <div id="stats">
+                    <i class="fa-solid fa-sun"></i>
+                    <p>18°</p>
+                    <p>feels like:15°</p>
+                    <h2>Sunny</h2>
+                </div>
+            </div>
+            <div id="card" class="New Work animate">
+                <div id="stats">
+                    <i class="fa-solid fa-cloud"></i>
+                    <p>25°</p>
+                    <p>feels like:23°</p>
+                    <h2>Partly cloudy</h2>
+                </div>
+            </div>
+        </div>
+        <div id="end" class="">
+            <h2 class="animate">Don't let the weather surprise you! <span>Try World Weather </span>now and enjoy a smarter weather experience!</h1>
+            <button id="searchbtn" class="animate">Search</button>
+        </div>
+    </main>
+    <div id="searching">
+        <div id="searching-box">
+          <i class="animate fa-solid fa-globe"></i>
+          <input list="cities" id="inputtext" class="animate" type="text" placeholder="Search for the location you want to know the weather for...">
+            <datalist id="cities"></datalist>
+          <i id="enter" class="animate fa-solid fa-arrow-right"></i>
+        </div>
+    </div>
+    <!--By Abo Stef !!! -->
+    <div id="weatherStats">
+        <div id="weather-stats">
+            <div id="main-Info" class="animate">
+                <div>
+                    <div  id="main-info-text">
+                        <h1 id="city">City name</h1>
+                        <p>Feels like: <span id="feels_like"></span></p>
+                        <h1 id="temp">31°</h1>
+                    </div>
+                </div>
+                <div id="main-info-img" class="animate">
+                    <img id="weathericon" src="" alt="">
+                </div>
+            </div>
+    
+            <div id="week-forecast" class="animate">
+                <div id="forecast">
+                    <br>
+                    <h5>7-DAY FORECAST</h1>
+                    <div id="contaner" class="animate"></div>
+                </div>
+            </div>
+            <div id="air-conditions" class="animate">
+                <div id="air">
+                    <div id="first-air">
+                        <div class="air-row">
+                            <div id="air-temp">
+                                <div class="flex-icon">
+                                    <i class="fa-solid fa-temperature-quarter"></i>
+                                    <p>Real Feel</p>
+                                </div>
+                                <h1 id="temp">Degree</h1>
+                            </div>
+                            <div id="air-wind">
+                                <div class="flex-icon">
+                                    <i class="fa-solid fa-wind"></i>
+                                    <p>Wind</p>
+                                </div>
+                                <h1 id="wind_speed">number km/h</h1>
+                            </div>
+                        </div>
+            
+                        <div class="air-row">
+                            <div id="air-humidity">
+                                <div class="flex-icon">
+                                    <i class="fa-solid fa-droplet"></i>
+                                    <p>Humidity</p>
+                                </div>
+                                <h1 id="humidity">40</h1>
+                            </div>
+                            <div id="air-description">
+                                <div class="flex-icon">
+                                    <i class="fa-solid fa-note-sticky"></i>
+                                    <p>Description</p>
+                                </div>
+                                <h1 id="description">Degree</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>                    
+        </div>
+    </div>
+    <div id="Aboutus">
+        <h1 class="animate">About us</h1>
+        <p class="animate"><strong>World Weather</strong> is a modern and reliable weather platform created by Ahmad Haj Hamdan, designed to provide accurate, real-time weather updates from around the globe with a beautiful, user-friendly interface that displays temperature, humidity, wind speed, and more in an elegant and intuitive design.</p>
+        <button id="searchbtn" class="animate">Try Wrold Weather!</button>
+    </div>
+    <div id="Support">
+        <h1 class="animate">Support</h1>
+        <p class="animate">I’m happy to connect with you! Feel free to reach out to me through any of the following social media platforms:</p>
+        <div class="animate">
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+    </div>
+   
+    <script src="script.js"></script>
+</body>
+
+</html>
