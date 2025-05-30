@@ -159,6 +159,10 @@ document.addEventListener("DOMContentLoaded", function () {
       AboutusPage.classList.remove('show');
       document.getElementById('weatherStats').classList.remove('show');
       Supportpage.classList.add('show');
-
+  });
+  instagramBtn = document.getElementsById('instgram_page_btn');
+  const instagramPage = "https://www.instagram.com/moonxd122/"
+  instagramBtn.addEventListener('click', function(){
+    window.open(instagramPage,'_blank')
   });
 });
