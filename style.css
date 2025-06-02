@@ -566,6 +566,9 @@ main.hide{
     #Support{
         text-align: center;
     }
+    #logo{
+        margin-left: 0rem;
+    }
   
 }
 
