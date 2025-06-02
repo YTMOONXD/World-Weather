@@ -551,6 +551,9 @@ main.hide{
     .air-row {
         flex-direction: column;
     }
+    #contaner{
+        flex-direction: column;
+    }
 }
 
 
