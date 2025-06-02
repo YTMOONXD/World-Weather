@@ -553,7 +553,20 @@ main.hide{
     }
     #contaner{
         flex-direction: column;
+        align-items: center;
     }
+    #Aboutus.show button{
+        margin-top: 1rem;
+        width: 50%;
+        align-self: center;
+    }
+    #searching-box{
+        width: 100%;
+    }
+    #Support{
+        text-align: center;
+    }
+  
 }
 
 
