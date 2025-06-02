@@ -519,8 +519,9 @@ main.hide{
         display: flex;
         
     }
-    #logo{
+    nav #logo {
         margin-right: 0rem;
+        margin-left: 1rem;
     }
     #card{
         margin-top: 1rem;
@@ -566,9 +567,7 @@ main.hide{
     #Support{
         text-align: center;
     }
-    #logo{
-        margin-left: 0rem;
-    }
+   
   
 }
 
