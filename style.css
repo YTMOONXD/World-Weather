@@ -552,7 +552,7 @@ main.hide{
     .air-row {
         flex-direction: column;
     }
-    #contaner{
+    #forecast #contaner{
         flex-direction: column;
         align-items: center;
     }
