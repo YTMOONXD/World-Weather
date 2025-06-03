@@ -262,7 +262,7 @@ main.hide{
     width: 80%;
     margin-top: 10rem;
     position: relative;
-  }
+}
 
 #searching-box input {
     flex-grow: 1;  
@@ -539,11 +539,13 @@ main.hide{
         text-wrap: nowrap;
     }
     #week-forecast{
+        margin-left: 0rem;
         font-size: 20px;
         width: 70%;
         flex-direction: column;
     }
     #air-conditions{
+        margin-left: 0rem;
         font-size: 20px;
         width: 70%;
         flex-direction: column;
@@ -566,6 +568,15 @@ main.hide{
     }
     #Support{
         text-align: center;
+    }
+    #main-info-text{
+        margin-left: 0rem;
+    }
+    #searching-box {
+        width: 40%;
+    }
+    #searching.show{
+        justify-content: flex-start;
     }
    
   
