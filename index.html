@@ -65,15 +65,17 @@
         script-src 'self' 'unsafe-inline';
         style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
     ">
-
 </head>
+<style rel="preload" >
+    html{scroll-behavior:smooth}body{font-family:'Lucida Sans','Lucida Sans Regular','Lucida Grande','Lucida Sans Unicode',Geneva,Verdana,sans-serif;font-weight:bolder;margin:0;padding:0;background-color:var(--background-color);color:var(--text-color);user-select:none;background-image:url(img/pexels-pixabay-147411.jpg);background-size:cover;background-position:0 100%;animation:slide-up-background 1.5s ease-out forwards}:root{--background-color:#000;--text-color:#fefefe;--first-color:#0085d0;--second-color:#FF6347}button{width:20%;height:2rem;background-color:transparent;border:2px var(--text-color) solid;border-radius:.3rem;color:var(--text-color);transition:all .3s ease-in;cursor:pointer;font-weight:700}#text button{width:50%}button:hover{width:21%;height:2.1rem;box-shadow:0 0 10px var(--text-color)}nav{position:absolute;top:0;left:0;width:100%;height:10%;display:flex;justify-content:space-between;user-select:none;align-items:center;position:absolute;z-index:2}nav p{cursor:pointer;transition:.3s ease-in}nav p:hover{border-bottom:1px var(--first-color) solid}nav #logo{display:flex;flex-direction:row-reverse;align-items:center;justify-content:space-between;gap:10px;transition:all .3s ease-in;margin-left:2rem}nav #logo:hover{font-size:17px;text-shadow:0 0 25px var(--first-color)}nav #logo i{background:none;font-size:2rem;color:var(--first-color);transition:all .3s ease-in}nav #logo:hover i{font-size:2.1rem}#links{display:flex}#links p{margin-right:2rem}.fa-bars{display:none}#text p{color:#868a88}main{display:flex;flex-direction:column}main.hide{display:none}#main{display:flex;justify-content:center;align-items:center;text-align:center;height:100vh;user-select:none;font-size:1.4rem}#text{text-shadow:1px 1px 25px #000}#text span{color:var(--text-color);animation:showglow 1s ease-in-out forwards;animation-delay:1s}#text span:nth-child(2){color:var(--text-color);animation:showglow 1s ease-in-out forwards;animation-delay:2s}.slide-up{position:relative;opacity:0;transform:translateY(30px);animation:slide-up 1.5s ease-out forwards}.first{animation-delay:.3s}.second{animation-delay:.5s}.third{animation-delay:.8s}#main-about{display:flex;width:100%;height:60vh;justify-content:center;align-items:center;flex-direction:column}#main-about p{width:50%;text-align:center;font-size:15px}#cards i{-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-size:40px;font-weight:700}.fa-sun{background:linear-gradient(80deg,#caca00,#c98200)}.fa-wind{background:linear-gradient(80deg,#fff,#b9d9e4)}.fa-cloud{background:linear-gradient(80deg,#fff,#757575)}.fa-smog{background:linear-gradient(80deg,#fff,#b9d9e4)}#card-title{text-align:center}#cards{display:flex;justify-content:space-around;width:100%;flex-wrap:wrap}#cards #card{width:10rem;height:15rem;background:linear-gradient(to bottom left,#1e1e1e,black);border-radius:1rem;padding:1rem}#card #stats{height:15rem;display:flex;overflow:hidden;flex-direction:column;gap:0;justify-content:center;align-items:center;font-size:1rem}#stats p:nth-child(2){font-size:3rem;margin:0}#stats p:nth-child(3){color:var(--text-color);background-color:var(--first-color);padding:.3rem;font-size:.8rem;border-radius:40rem;margin:.2rem}#stats i{font-size:80px}#end{display:flex;width:100%;height:100vh;justify-content:center;align-items:center;flex-direction:column;text-align:center}#end span{color:var(--first-color);font-weight:800;text-shadow:0 0 25px var(--first-color)}#searching{display:none}#searching.show{z-index:5;display:flex;position:absolute;align-items:flex-start;justify-content:center;top:0;right:0;width:100%;height:350vh;backdrop-filter:blur(10px)}#searching-box{display:flex;align-items:center;justify-content:space-between;width:80%;margin-top:10rem;position:relative}#searching-box input{flex-grow:1;padding:1rem 2rem 1rem 3rem;border-radius:2rem;background-color:transparent;border:2px solid var(--text-color);font-size:20px;color:var(--text-color)}#searching-box input:focus{outline:none}#searching-box input::placeholder{color:var(--text-color)}#enter{padding:1.2rem;font-size:1rem;cursor:pointer;border:2px var(--text-color) solid;border-radius:50%;color:var(--text-color);margin-left:1rem}#enter:hover{box-shadow:0 0 25px var(--text-color)}#searching-box i:nth-child(1){position:absolute;left:1rem;font-size:1.5rem}#weatherStats{display:none;width:100%;height:100vh;background:url(img/pexels-pixabay-147411.jpg);background-size:cover;background-position:center}#weatherStats.show{display:block}#weather-stats{margin-top:5rem;display:flex;flex-direction:column}#main-Info{width:100%;display:flex;flex-direction:row;justify-content:space-between}#main-info-text{margin-left:5rem}#main-info-text h1:nth-child(1){margin-block-end:5px}#main-info-text #temp{margin-top:3rem;font-size:3rem}#main-info-text p{display:inline;margin-block-start:10px;font-size:15px;color:#000;background-color:var(--first-color);border-radius:2rem;padding:0 1rem}#main-info-img{display:flex;margin-right:5rem;align-items:center}#main-info-img img{width:150px}#week-forecast{margin-left:2rem;width:90%;flex-direction:row;justify-content:space-between;align-items:center;background-color:#202b3c88;padding:0 2rem;border-radius:20px}#forcast{display:flex;flex-direction:row;width:100vh}#forecast p{margin-block-end:0;margin-block-start:0}#forecast #weathericon{text-align:center}#forecast #contaner{display:flex;width:100%;flex-direction:row;justify-content:space-between}#contaner div{display:flex;flex-direction:column;text-align:center;width:100px;height:150px;margin-bottom:1rem}#air-conditions{margin-left:2rem;margin-top:2rem;width:90%;display:flex;flex-direction:row;align-items:center;background-color:#202b3c88;padding:0 2rem;border-radius:20px}#air{width:80%}#first-air{display:flex;flex-direction:column;gap:20px;max-width:900px;margin:auto}.air-row{display:flex;justify-content:space-between}.air-row > div{width:48%;padding:10px;border-radius:10px}.air-row h1{margin-left:1.5rem}.flex-icon{display:flex;gap:5px}#air-conditions i{display:flex;background:none;color:#8b8b8b;align-self:center;font-size:1.5rem}#Aboutus{display:none}#Aboutus.show{display:flex;width:100%;height:100vh;flex-direction:column;justify-content:center;font-size:1rem;text-align:center}#Aboutus.show h1{color:#0085d0;text-shadow:0 0 25px var(--first-color)}#Aboutus.show button{margin-top:1rem;align-self:center}.animate{opacity:0}.animate.show{animation:slide-up 1s ease-in-out forwards}#Support{display:none}#Support.show{width:100%;height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center}#Support.show h1{color:var(--first-color);text-shadow:0 0 25px var(--first-color)}#Support.show i{font-size:1.5rem;border:2px solid var(--text-color);padding:.5rem;transition:all .3s ease-in;border-radius:100%;cursor:pointer}#Support.show i:hover{font-size:1.7rem;box-shadow:0 0 25px var(--text-color)}@media (max-width: 820px){.fa-bars{display:flex;justify-self:right;margin-right:1rem}#links{display:none;position:absolute;top:50px;right:0;flex-direction:column;background:linear-gradient(to bottom right,#1e1e1e,black);padding:1rem;border-top-left-radius:1rem;border-bottom-left-radius:1rem;animation:slide-up 1s ease-in-out forwards}#links.show{display:flex}nav{display:flex}nav #logo{margin-right:0;margin-left:1rem}#card{margin-top:1rem}#main-about{font-size:20px}#main-about button{width:50%}#end button{width:50%}#main-info-text p{text-wrap:nowrap}#week-forecast{margin-left:0;font-size:20px;width:70%;flex-direction:column}#air-conditions{margin-left:0;font-size:20px;width:70%;flex-direction:column;align-items:flex-start}.air-row{flex-direction:column}#forecast #contaner{flex-direction:column;align-items:center}#Aboutus.show button{margin-top:1rem;width:50%;align-self:center}#searching-box{width:100%}#Support{text-align:center}#main-info-text{margin-left:0}#searching-box{width:40%}#searching.show{justify-content:flex-start}}@keyframes slide-up{0%{opacity:0;transform:translateY(30px)}100%{opacity:1;transform:translateY(0)}}@keyframes slide-up-background{0%{background-position:0 100%}100%{background-position:0 0}}@keyframes showglow{0%{color:var(--text-color)}100%{color:var(--first-color);text-shadow:0 0 25px var(--first-color)}}
+</style>
 
 
 
 <body>
     <nav>
         <div id="logo">
-            <h3>World weather</h1>  
+            <h3 rel="preload" >World weather</h1>  
             <i class="fa-solid fa-cloud"></i>
         </div>
         <i id="bars" class="fa-solid fa-bars"></i>
@@ -88,7 +90,7 @@
         <div id="main">
             <div id="welcome">
                 <div id="text">
-                    <h1 class="slide-up first">Your <span>world</span>, Your <span>weather</span></h1>
+                    <h1 rel="preload" class="slide-up first">Your <span>world</span>, Your <span>weather</span></h1>
                     <p class="slide-up second">Real-time forecasts for every location.</p>                
                     <button id="searchbtn" class="slide-up third">Search</button>
                 </div>
@@ -103,7 +105,7 @@
             </div>
         
         <div id="card-title" class="animate">
-            <h1>Random Weathers Around The World</h1>
+            <h1 rel="preload" >Random Weathers Around The World</h1>
         </div>
         <div id="cards">
             <div id="card" class="Tokoy animate">
@@ -140,7 +142,7 @@
             </div>
         </div>
         <div id="end" class="">
-            <h2 class="animate">Don't let the weather surprise you! <span>Try World Weather </span>now and enjoy a smarter weather experience!</h1>
+            <h2 rel="preload" class="animate">Don't let the weather surprise you! <span>Try World Weather </span>now and enjoy a smarter weather experience!</h1>
             <button id="searchbtn" class="animate">Search</button>
         </div>
     </main>
@@ -152,26 +154,25 @@
           <i id="enter" class="animate fa-solid fa-arrow-right"></i>
         </div>
     </div>
-    <!--By Abo Stef !!! -->
     <div id="weatherStats">
         <div id="weather-stats">
             <div id="main-Info" class="animate">
                 <div>
                     <div  id="main-info-text">
-                        <h1 id="city"></h1>
+                        <h1 rel="preload" id="city"></h1>
                         <p>Feels like: <span id="feels_like"></span></p>
-                        <h1 id="temp"></h1>
+                        <h1 rel="preload" id="temp"></h1>
                     </div>
                 </div>
                 <div id="main-info-img" class="animate">
-                    <img id="weathericon" src="" alt="">
+                    <img  rel="preload" id="weathericon" src="" alt="">
                 </div>
             </div>
     
             <div id="week-forecast" class="animate">
                 <div id="forecast">
                     <br>
-                    <h5>7-DAY FORECAST</h1>
+                    <h5 rel="preload" >7-DAY FORECAST</h1>
                     <div id="contaner" class="animate"></div>
                 </div>
             </div>
@@ -184,14 +185,14 @@
                                     <i class="fa-solid fa-temperature-quarter"></i>
                                     <p>Real Feel</p>
                                 </div>
-                                <h1 id="temp"></h1>
+                                <h1 rel="preload" id="temp"></h1>
                             </div>
                             <div id="air-wind">
                                 <div class="flex-icon">
                                     <i class="fa-solid fa-wind"></i>
                                     <p>Wind</p>
                                 </div>
-                                <h1 id="wind_speed"></h1>
+                                <h1 rel="preload" id="wind_speed"></h1>
                             </div>
                         </div>
             
@@ -201,14 +202,14 @@
                                     <i class="fa-solid fa-droplet"></i>
                                     <p>Humidity</p>
                                 </div>
-                                <h1 id="humidity"></h1>
+                                <h1 rel="preload" id="humidity"></h1>
                             </div>
                             <div id="air-description">
                                 <div class="flex-icon">
                                     <i class="fa-solid fa-note-sticky"></i>
                                     <p>Description</p>
                                 </div>
-                                <h1 id="description"></h1>
+                                <h1 rel="preload" id="description"></h1>
                             </div>
                         </div>
                     </div>
@@ -217,24 +218,21 @@
         </div>
     </div>
     <div id="Aboutus">
-        <h1 class="animate">About us</h1>
-<<<<<<< HEAD
+        <h1 rel="preload" class="animate">About us</h1>
         <p class="animate"><strong>World Weather</strong> is a modern and reliable weather platform, designed to provide accurate, real-time weather updates from around the globe with a beautiful, user-friendly interface that displays temperature, humidity, wind speed, and more in an elegant and intuitive design.</p>
-=======
-        <p class="animate"><strong>World Weather</strong> is a modern and reliable weather platform created by Ahmad 
-, designed to provide accurate, realtime weather updates from around the globe with a beautiful, user-friendly interface that displays temperature, humidity, wind speed, and more in an elegant and intuitive design.</p>
->>>>>>> 7adec490a77ab6a23657a82ed7fe5932dcf2ab11
         <button id="searchbtn" class="animate">Try Wrold Weather!</button>
     </div>
     <div id="Support">
-        <h1 class="animate">Support</h1>
+        <h1 rel="preload" class="animate">Support</h1>
         <p class="animate">I’m happy to connect with you! Feel free to reach out to me through any of the following social media platforms:</p>
         <div class="animate">
             <i id="instgram_page_btn" class="fa-brands fa-instagram"></i>
         </div>
     </div>
    
-    <script src="script.js"></script>
+    <script rel="preload">
+        document.addEventListener("DOMContentLoaded",(function(){const e=[],t=new IntersectionObserver((e=>{e.forEach((e=>{e.isIntersecting&&(e.target.classList.add("show"),t.unobserve(e.target))}))}),{threshold:.3});document.querySelectorAll(".animate").forEach((e=>t.observe(e)));let n=document.getElementById("bars"),o=document.getElementById("links");n&&o&&n.addEventListener("click",(()=>{o.classList.toggle("show")}));const s=document.querySelectorAll("#searchbtn"),c=document.getElementById("searching");s.forEach((e=>{e.addEventListener("click",(()=>{window.scroll({top:0,left:0,behavior:"smooth"}),c.classList.toggle("show")}))})),document.addEventListener("click",(function(e){c.classList.contains("show")&&"DIV"===e.target.tagName&&c.classList.toggle("show")})),document.getElementById("enter").addEventListener("click",(function(){document.getElementById("contaner").innerHTML="";const t=document.getElementById("inputtext").value.trim();if(!e.includes(t))return void alert("Please enter a valid city name");if(!/^[a-zA-Z\u0600-\u06FF\s-]{2,50}$/.test(t))return void alert("Please enter a valid city name");document.querySelectorAll("main").forEach((e=>e.classList.add("hide"))),AboutusPage.classList.remove("show"),Supportpage.classList.remove("show"),document.getElementById("weatherStats").classList.add("show"),c.classList.toggle("show"),fetch("https://worldweatherbackend.onrender.com/api",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({text:t})}).then((e=>e.json())).then((e=>{document.getElementById("city").textContent=e.city,document.getElementById("feels_like").textContent=`${Math.round(e.feels_like)}°`,document.querySelectorAll("#temp").forEach((t=>{t.textContent=`${Math.round(e.temp)}°`})),document.getElementById("humidity").textContent=e.humidity,document.getElementById("wind_speed").textContent=`${(3.6*e.wind_speed).toFixed(1)} km/h`,document.getElementById("description").textContent=e.description,document.querySelectorAll("#weathericon").forEach((t=>{t.src=e.icon}))})).catch((e=>{console.log("Error: "+e)})),fetch("https://worldweatherbackend.onrender.com/forecast",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({text:t})}).then((e=>e.json())).then((e=>{e.forEach((e=>{const t=document.createElement("div"),n=document.createElement("p");n.textContent=e.day;const o=document.createElement("img");o.id="weathericon",o.src=e.icon,o.alt="";const s=document.createElement("p");s.textContent=Math.round(e.temp)+"°",t.appendChild(n),t.appendChild(o),t.appendChild(s),document.getElementById("contaner").appendChild(t)}))})).catch((e=>{document.getElementById("error-message").textContent="خطأ: "+e,document.getElementById("forecast").style.display="none"}))})),AboutusPage=document.getElementById("Aboutus"),AboutusButton=document.getElementById("aboutusbtn"),AboutusButton.addEventListener("click",(function(){document.querySelectorAll("main").forEach((e=>e.classList.add("hide"))),AboutusPage.classList.add("show"),document.getElementById("weatherStats").classList.remove("show"),Supportpage.classList.remove("show")})),fetch("https://restcountries.com/v3.1/all").then((e=>e.json())).then((t=>{const n={};t.forEach((t=>{const o=t.region||"Other";n[o]||(n[o]=[]);const s=t.name.common.replace(/[^a-zA-Z\u0600-\u06FF\s-]/g,"");n[o].push(s),e.push(s)}));const o=document.getElementById("cities");for(const e in n){const t=document.createElement("optgroup");t.label=e,n[e].sort().forEach((e=>{const n=document.createElement("option");n.value=e,n.textContent=e,t.appendChild(n)})),o.appendChild(t)}})),Supportbtn=document.getElementById("supportbtn"),Supportpage=document.getElementById("Support"),Supportbtn.addEventListener("click",(function(){document.querySelectorAll("main").forEach((e=>e.classList.add("hide"))),AboutusPage.classList.remove("show"),document.getElementById("weatherStats").classList.remove("show"),Supportpage.classList.add("show")})),instagramBtn=document.getElementById("instgram_page_btn");instagramBtn.addEventListener("click",(function(){window.open("https://www.instagram.com/moonxd122/","_blank")}))}));
+    </script>
 </body>
 
 </html>
