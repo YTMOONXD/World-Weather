@@ -3,35 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/98bb996b2e.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="img/website-icon.ico" type="image/x-icon">
-    <meta http-equiv="Content-Security-Policy" content="
-    default-src 'self'; 
-    connect-src 'self' https://worldweatherbackend.onrender.com https://restcountries.com; 
-    font-src 'self' https://kit.fontawesome.com https://ka-f.fontawesome.com; 
-    img-src 'self' data: https:; 
-    script-src 'self' 'unsafe-inline'; 
-    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;"
-    >
-    <meta name="og:title" content="World Weather"/>
-    <meta name="og:description" content="World Weather provides accurate, real-time global weather updates with a modern, user-friendly interface showing temperature, humidity, wind speed, and more."/>
-    <meta name="og:image" content="favicon\title_img.png"/>
-    <meta property="og:url" content="https://ytmoonxd.github.io/World-Weather/"/>
-    <meta property="og:type" content="website" />
-    <link rel="icon" type="image/png" href="favicon\favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="favicon\favicon.svg" />
-    <link rel="shortcut icon" href="favicon\favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon\apple-touch-icon.png" />
+
+    <!-- Basic SEO -->
+    <title>World Weather - Real-Time Global Weather Forecast & Updates</title>
+    <meta name="description" content="World Weather provides accurate, real-time global weather updates worldwide. See temperature, humidity, wind speed, and more with a modern and user-friendly interface.">
+    <meta name="keywords" content="weather, world weather, global forecast, temperature, humidity, wind speed, live weather updates">
+    <meta name="author" content="MOONXD">
+    <meta name="robots" content="index, follow">
+
+    <!-- Favicon & App Icons -->
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="World Weather"/>
-    <link rel="manifest" href="favicon\site.webmanifest" />
-    <meta http-equiv="Content-Security-Policy" content="font-src 'self' https://kit.fontawesome.com https://ka-f.fontawesome.com;">
+    <link rel="manifest" href="favicon/site.webmanifest" />
 
+    <!-- Open Graph (Facebook, LinkedIn) -->
+    <meta property="og:title" content="World Weather" />
+    <meta property="og:description" content="Accurate, real-time global weather updates with temperature, humidity, wind speed, and more." />
+    <meta property="og:image" content="https://ytmoonxd.github.io/World-Weather/favicon/title_img.png" />
+    <meta property="og:url" content="https://ytmoonxd.github.io/World-Weather/" />
+    <meta property="og:type" content="website" />
 
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="World Weather">
+    <meta name="twitter:description" content="Accurate, real-time global weather updates with temperature, humidity, wind speed, and more.">
+    <meta name="twitter:image" content="https://ytmoonxd.github.io/World-Weather/favicon/title_img.png">
 
+    <!-- Structured Data (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "World Weather",
+      "url": "https://ytmoonxd.github.io/World-Weather/",
+      "description": "Real-time global weather updates with temperature, humidity, and wind speed.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "World Weather",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://ytmoonxd.github.io/World-Weather/favicon/favicon-96x96.png"
+        }
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://ytmoonxd.github.io/World-Weather/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
 
-    <title>World Weather</title>
+    <!-- Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self';
+        connect-src 'self' https://worldweatherbackend.onrender.com https://restcountries.com;
+        font-src 'self' https://kit.fontawesome.com https://ka-f.fontawesome.com;
+        img-src 'self' data: https:;
+        script-src 'self' 'unsafe-inline';
+        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+    ">
+
 </head>
+
+
 
 <body>
     <nav>
@@ -181,7 +218,7 @@
     </div>
     <div id="Aboutus">
         <h1 class="animate">About us</h1>
-        <p class="animate"><strong>World Weather</strong> is a modern and reliable weather platform created by Ahmad Haj Hamdan, designed to provide accurate, real-time weather updates from around the globe with a beautiful, user-friendly interface that displays temperature, humidity, wind speed, and more in an elegant and intuitive design.</p>
+        <p class="animate"><strong>World Weather</strong> is a modern and reliable weather platform, designed to provide accurate, real-time weather updates from around the globe with a beautiful, user-friendly interface that displays temperature, humidity, wind speed, and more in an elegant and intuitive design.</p>
         <button id="searchbtn" class="animate">Try Wrold Weather!</button>
     </div>
     <div id="Support">

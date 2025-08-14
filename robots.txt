@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ytmoonxd.github.io/World-Weather/sitemap.xml
